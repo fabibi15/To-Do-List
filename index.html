@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
+
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <h1>ToDO List</h1>
-    <p>texto normal</p>
-    <div class="container">
-        <form action="">
-            <ul></ul>
-        </form>
+    <div id="divHeader" class="header">
+        <h2>To Do List</h2>
+        <input type="text" id="inputTask">
+        <span onclick="newTask()" class="btnAddTask">
+            Adicionar
+        </span>
     </div>
+
+    <ul id="tasksList"></ul>
 </body>
 </html>
